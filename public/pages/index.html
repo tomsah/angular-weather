@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<script src="https://code.angularjs.org/1.4.7/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.7/angular-resource.min.js"></script>
+	<script src="app.js"></script>
+	<script src="routes.js"></script>
+	<script src="services.js"></script>
+	<script src="controllers.js"></script>
+	<script src="directives.js"></script>
+</head>
+<body ng-app="weatherApp">
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#/">AngularJS</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+					<!-- <li><a href="#/forecast"><i class="fa"></i> Page2</a></li> -->
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+			<div ng-view>
+				
+			</div>
+
+		</div>
+</body>
+</html>
